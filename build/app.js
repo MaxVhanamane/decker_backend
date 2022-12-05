@@ -2,7 +2,7 @@ import { config } from "dotenv"
 import express from "express"
 import mongoose from "mongoose"
 import cors from "cors"
-import DeckModal from './models/models.js';
+import DeckModal from "../build/models/models.js"
 config()
 const app = express()
 // here app.use() acts as middleware. as we have not specified the path here it will run on every request. If you want to run it on a specific path add the path then it will run on that path only. eg. app.use("/add",express.json())
